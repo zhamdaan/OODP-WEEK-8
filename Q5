@@ -1,0 +1,51 @@
+#include <iostream> 
+using namespace std  ;  
+class Marks{
+    protected:
+    float physics;
+    float chemisty;
+    float mathematics;
+    public:
+    void getpercentage();
+
+};
+
+class Amarks : public Marks{
+    public:
+       Amarks()
+       {
+        cin>>physics;
+        cin>>chemisty;
+       cin>>mathematics;
+    }
+void getpercentage(){
+    float sum = ((physics+chemisty+mathematics)/300)*100;
+    cout<<"sum is "<<sum<<endl;
+}
+} ;
+class Bmarks :public Marks{
+    public:
+    float computer;
+         Bmarks()
+         {
+        cin>>physics;
+        cin>>chemisty;
+        cin>>mathematics;
+        cin>>computer;
+    }
+void getpercentage(){
+    float sum = ((physics+chemisty+mathematics+computer)/400)*100;
+    cout<<"answer is " <<sum<<endl;
+}
+};
+
+
+int main(){
+
+Amarks A1 ; 
+Bmarks B1 ;  
+A1.getpercentage();
+B1.getpercentage();
+ 
+ return 0  ; 
+}  
