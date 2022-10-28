@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+
+ class temp{
+ int a;
+ int b;
+ friend class tem ;
+
+ };
+  class tem:public temp{
+    public:
+     void getdata(){
+        cin>>a;
+        cin>>b;
+     }
+    void print(){
+       int sum = a+b;
+       cout<<sum<<endl;
+     }
+};
+int main  () 
+  { 
+     tem A ; 
+     A.getdata () ;  
+     A.print ()  ;  
+                 
+                 return 0 ;  
+  }  
