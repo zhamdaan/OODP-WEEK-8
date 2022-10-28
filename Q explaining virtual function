@@ -1,0 +1,33 @@
+#include <iostream> 
+using namespace std  ;  
+class vir{
+   protected:
+int n;
+ int m;
+public:
+virtual void getdata()=0;
+virtual void sum()=0;
+ };
+class su : public vir{
+public:
+void getdata(){
+  cin>>n;
+   cin>>m ;
+}
+ void sum(){
+    int ans = n+m;
+     cout<<ans<<endl;
+ }
+
+ };
+
+int main() {
+    
+vir *baseclass;
+ su abstr;
+baseclass = &abstr;
+ baseclass->getdata();
+ baseclass->sum();
+
+
+} 
