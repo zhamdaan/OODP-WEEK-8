@@ -1,0 +1,34 @@
+
+// class area{
+//     protected:
+// int radius;
+// int length;
+// int breadth;
+// int side;
+// public:
+// virtual void getdata();
+// virtual  void areaofcircle();
+// virtual void areaofrect();
+// virtual void areaofsquare();
+// };
+// class firstarea:public area{
+//     public:
+//     void getdata(){
+//         cin>>radius;
+//         cin>>length;
+//         cin>>breadth;
+//         cin>>side;
+//     }
+//     void  areaofcircle(){
+//         float ans = 2*3.14*(radius*radius);
+//         cout<<"Printing area of circle "<<ans<<endl;
+//     }
+//      void  areaofrect(){
+//         float ans = length*breadth;
+//         cout<<"Printing area of rectangle "<<ans<<endl;
+//     }
+//      void  areaofsquare(){
+//         float ans =side*side;
+//         cout<<"Printing area of square "<<ans<<endl;
+//     }
+// };
